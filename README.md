@@ -14,7 +14,7 @@ This repository contains modified Circuit Python files to work with Micropython 
 
 
 ### Requirements & Setup:
-    - Designed to work with the Raspberry Pi Pico (RP2040)
+    - Designed to work with the Raspberry Pi Pico (RP2040) (Currently will not work for any other MCUs)
     - Tested using anvil MicroPython Firmware: https://github.com/anvil-works/anvil-pico/releases
     - I2C Tested with Garmin Lidar Lite v3
     
