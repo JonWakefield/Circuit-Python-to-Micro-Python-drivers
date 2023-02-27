@@ -1,4 +1,4 @@
-# Circuit-Python-to-Micro-Python-drivers
+# Circuit-Python-to-Micro-Python-Modules
 This repository contains modified Circuit Python files to work with Micropython Firmware
 
 ### Goal:
