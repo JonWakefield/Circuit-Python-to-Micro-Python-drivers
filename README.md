@@ -1,6 +1,9 @@
 # Circuit-Python-to-Micro-Python-drivers
 This repository contains modified Circuit Python files to work with Micropython Firmware
 
+### Goal:
+    Quickly drop in & run circuitpython code to a RP2040 microcontroller with Micropython firmare
+
 ### Modified File names (Orignal file):
     - Busio.py (https://github.com/adafruit/Adafruit_Blinka/blob/main/src/busio.py)
     - Board.py (https://github.com/adafruit/Adafruit_Blinka/blob/main/src/board.py)
