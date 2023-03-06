@@ -24,10 +24,13 @@ import busio
 import time
 # from adafruit_bus_device.i2c_device import I2CDevice
 from i2c_device import I2CDevice
-import digitalio
 from micropython import const
 from machine import Pin
 
+'''
+    Same Registers seen here: https://github.com/adafruit/Adafruit_CircuitPython_LIDARLite/blob/main/adafruit_lidarlite.py
+    For more information on each register: https://static.garmin.com/pumac/LIDAR_Lite_v3_Operation_Manual_and_Technical_Specifications.pdf
+'''
     
 ''' REGISTERS USED TO CHANGE I2C ADDRESS'''
 _REG_I2C_ID_HIGH = const(0x18) # write device id high byte back to device
@@ -721,6 +724,7 @@ if __name__ == '__main__':
         # NOTE: MAY NEED A UNQ BIAS FOR EACH LIDAR
         dist_bias = update_lidar_bias(lidar1_distances_list, lidar2_distances_list, lidar3_distances_list, lidar4_distances_list, int(lidars_connected), dist_bias)
         
+        #Change (or remove) value of x to run program for longer (forever).
         x += 1
         
         if (x == 1):
