@@ -7,6 +7,14 @@
     
     Related Documents & Documentation:
     https://github.com/JonWakefield/Circuit-Python-to-Micro-Python-drivers
+    
+    SYSTEM OVERVIEW:                                                  Function or Method:
+
+    1) Setup Lidars using adafruit LIDAR class & change I2C address   (setup_lidars())
+    2) Do i2c scan to ensure all devices are configured properly      (i2c_scanner())
+    3) read in data (distance , rssi)                                 (read_lidars())
+    4) check for beam breaks on each lidar                            (check_if_beam_broken())
+    5) increate total number of beam breaks   
 
 '''
 
@@ -748,38 +756,5 @@ if __name__ == '__main__':
     #print(f"Lidar 4 distance values: {lidar4_distances_list}")
        
     print(f"Total number of breaks Detected: {all_breaks_detected}")
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-''' SYSTEM OVERVIEW:
-
-    1) Setup Lidars using adafruit LIDAR class & change I2C address   (setup_lidars())
-    2) Do i2c scan to ensure all devices are configured properly      (i2c_scanner())
-    3) read in data (distance , rssi)                                 (read_lidars())
-    4) check for beam breaks on each lidar                            (check_if_beam_broken())
-    5) increate total number of beam breaks   
-
-
-
-    TODO:
-    
-        1) Sending values (distance, break detection) back to RPI
-        2) Receiving Data from RPI (restart ?, kill switch ?)
-        3) Distance biasing
-        4) Trigger signal to switch a SSR ( when a break is detected)
-        5) After n readings, re-check i2c_scanner() to ensure all devices are still connected
-        6) Finalize Error Handeling (Allow RPI to call setup_lidars to re-initlize them if problem encountered)
-
-'''
-
-
-ÿ
+         
+ 
