@@ -624,22 +624,10 @@ i2c_1 = busio.I2C(board.GP5, board.GP4) #
 
 '''Power Enable pins: '''
 # Setup digital IO pins
-# lidar1_PE = digitalio.DigitalInOut(board.GP0)
-# lidar2_PE = digitalio.DigitalInOut(board.GP5)
-# lidar3_PE = digitalio.DigitalInOut(board.GP6)
-# lidar4_PE = digitalio.DigitalInOut(board.GP7)
-
 lidar1_PE = Pin(15, Pin.OUT)
 lidar2_PE = Pin(14, Pin.OUT)
 lidar3_PE = Pin(13, Pin.OUT)
 lidar4_PE = Pin(12, Pin.OUT)
-
-# configure IO pins for output
-# lidar1_PE.direction = digitalio.Direction.OUTPUT
-# lidar2_PE.direction = digitalio.Direction.OUTPUT
-# lidar3_PE.direction = digitalio.Direction.OUTPUT
-# lidar4_PE.direction = digitalio.Direction.OUTPUT
-
 
 # --------- Global Variables: -------------------
 
